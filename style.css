@@ -97,14 +97,14 @@ nav h4:hover{
 /* Responsive */
 @media (max-width: 1200px) {
     main { column-count: 3; }
-    .menu {left:32%}
+    .menu {left:40%}
     .footer .content h2{ font-size: 22px;}
     .footer .content h4{ font-size: 20px;}
 }
 
 @media (max-width: 768px) {
     main { column-count: 2; }
-    .menu {left:28%}
+    .menu {left:38%}
     .footer .content h2{ font-size: 18px;}
     .footer .content h4{ font-size: 16px;}
 }
