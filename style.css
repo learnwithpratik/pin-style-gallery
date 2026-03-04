@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    /* background-color: black; */
+    column-count: 3;
+    column-gap: 10px;
+    padding: 6% 1.5%;
+    background-color: black;
+}
+
+.menu{
+    width: fit-content;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* height: 6%; */
+    background-color: rgba(0, 0, 0, 0.437);   
+    backdrop-filter: blur(12px);
+    position: fixed;
+    left: 42%;
+    top: 0;
+    margin-top: 20px;
+    z-index: 11;
+    border: 1px solid rgba(255, 255, 255, 0.289);
+   transition: all ease-in-out 0.3s;
+}
+.menu nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    gap: 20px;
+}
+
+nav h4{
+    transition: all linear 0.2s;
+    font-weight: 200;
+    font-family: monospace;
+    font-size: 18px;
+    cursor: pointer;
+}
+nav h4:hover{
+    color: white;
+    /* filter: drop-shadow(0 0 10px rgb(255, 68, 0)); */
+}
+.menu:hover{
+    filter: drop-shadow(0 5px 20px rgba(255, 69, 1, 0.679));
+    background:radial-gradient(orange,orangered);
+    transform: translateY(-2px);
+}
+
+.card {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    filter: brightness(0.8);
+}
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+    border-top: 1px solid rgba(255, 68, 0, 0.547);
+}
+.footer .content h4{
+    font-weight: 200;
+}
+.footer .content h2{
+    font-weight: 200;
+    color: orangered;
+    filter: drop-shadow(0 0 15px rgba(255, 68, 0, 0.745));
+    font-size: 22px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    main { column-count: 3; }
+    .menu {left:32%}
+    .footer .content h2{ font-size: 22px;}
+    .footer .content h4{ font-size: 20px;}
+}
+
+@media (max-width: 768px) {
+    main { column-count: 2; }
+    .menu {left:28%}
+    .footer .content h2{ font-size: 18px;}
+    .footer .content h4{ font-size: 16px;}
+}
+
+@media (max-width: 480px) {
+    main { column-count: 1; }
+    .menu {left:20%}
+    .footer .content h2{ font-size: 12px;}
+    .footer .content h4{ font-size: 10px;}
+}
