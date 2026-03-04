@@ -111,7 +111,7 @@ nav h4:hover{
 
 @media (max-width: 480px) {
     main { column-count: 1; }
-    .menu {left:20%}
+    .menu {left:30%}
     .footer .content h2{ font-size: 12px;}
     .footer .content h4{ font-size: 10px;}
 }
